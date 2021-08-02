@@ -76,12 +76,12 @@ export default class Swipeable extends PureComponent {
     swipeStartMinDistance: PropTypes.number,
 
     // styles
-    style: ViewPropTypes.style,
-    leftContainerStyle: ViewPropTypes.style,
-    leftButtonContainerStyle: ViewPropTypes.style,
-    rightContainerStyle: ViewPropTypes.style,
-    rightButtonContainerStyle: ViewPropTypes.style,
-    contentContainerStyle: ViewPropTypes.style
+    style: PropTypes.shape({style: PropTypes.PropTypes.any}),
+    leftContainerStyle: PropTypes.shape({style: PropTypes.PropTypes.any}),
+    leftButtonContainerStyle: PropTypes.shape({style: PropTypes.PropTypes.any}),
+    rightContainerStyle: PropTypes.shape({style: PropTypes.PropTypes.any}),
+    rightButtonContainerStyle: PropTypes.shape({style: PropTypes.PropTypes.any}),
+    contentContainerStyle: PropTypes.shape({style: PropTypes.PropTypes.any})
   };
 
   static defaultProps = {
